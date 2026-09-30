@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Patient Form</title>
+</head>
+<body style="font-family: Arial, sans-serif; margin: 30px;">
+
+    <h1>Patient Form</h1>
+
+    <form action="#" method="post" enctype="multipart/form-data">
+        <table border="1" cellpadding="8" cellspacing="0">
+            <!-- Patient Name -->
+            <tr>
+                <td><label for="name">Name:</label></td>
+                <td><input type="text" id="name" name="name" required></td>
+            </tr>
+
+            <!-- Date of Birth -->
+            <tr>
+                <td><label for="dob">DOB:</label></td>
+                <td><input type="date" id="dob" name="dob"></td>
+            </tr>
+
+            <!-- Age -->
+            <tr>
+                <td><label for="age">Age:</label></td>
+                <td><input type="number" id="age" name="age" min="0"></td>
+            </tr>
+
+            <!-- Gender -->
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                </td>
+            </tr>
+
+            <!-- ID Number -->
+            <tr>
+                <td><label for="id_number">ID Number:</label></td>
+                <td><input type="text" id="id_number" name="id_number"></td>
+            </tr>
+
+            <!-- Patient ID -->
+            <tr>
+                <td><label for="patient_id">Patient ID:</label></td>
+                <td><input type="text" id="patient_id" name="patient_id"></td>
+            </tr>
+
+            <!-- Phone Number -->
+            <tr>
+                <td><label for="phone">Phone Number:</label></td>
+                <td><input type="tel" id="phone" name="phone"></td>
+            </tr>
+
+            <!-- Health Status -->
+            <tr>
+                <td><label for="health_status">Health Status:</label></td>
+                <td><input type="text" id="health_status" name="health_status"></td>
+            </tr>
+
+            <!-- Address -->
+            <tr>
+                <td><label for="address">Address:</label></td>
+                <td><textarea id="address" name="address" rows="3" cols="25"></textarea></td>
+            </tr>
+
+            <!-- Marital Status -->
+            <tr>
+                <td><label for="marital_status">Marital Status:</label></td>
+                <td>
+                    <select id="marital_status" name="marital_status">
+                        <option value="">--Select--</option>
+                        <option value="single">Single</option>
+                        <option value="married">Married</option>
+                        <option value="divorced">Divorced</option>
+                        <option value="widowed">Widowed</option>
+                    </select>
+                </td>
+            </tr>
+
+            <!-- Next of Kin -->
+            <tr>
+                <td><label for="next_of_kin">Next of Kin:</label></td>
+                <td><input type="text" id="next_of_kin" name="next_of_kin"></td>
+            </tr>
+
+            <!-- Weight -->
+            <tr>
+                <td><label for="weight">Weight:</label></td>
+                <td><input type="number" id="weight" name="weight" step="0.1"></td>
+            </tr>
+            <!-- Submit Button -->
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Submit">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
